@@ -76,7 +76,7 @@
               inkscape tuda.pdf --export-filename=p1_i.svg --export-dpi=3000 --pages=1
               sed -i 's/icc-color([^)]*)//g' p1_i.svg
               sed -i 's/#000000/#1d1d1bff/g' p1_i.svg
-              rsvg-convert -f pdf -o $logo_path/tuda_logo.pdf p1_i.svg --export-id=g23
+              rsvg-convert -f pdf -o $logo_path/tuda_logo.pdf p1_i.svg --export-id=g20
 
               runHook postInstall
             '';
