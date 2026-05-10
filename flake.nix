@@ -72,7 +72,7 @@
               mkdir -p $logo_path
               cp ${tuda-pdf} tuda.pdf
 
-              # see https://github.com/tudalgo/AlgoTeX/blob/5de6300bcbbf4ffb5c6ec9e8fb29fdd2f3b7896b/Dockerfile.logo
+              # see https://github.com/tudalgo/AlgoTeX/commit/ce0e2c032d3067070ef07bd8c84520f8209e1997
               inkscape tuda.pdf --export-filename=p1_i.svg --export-dpi=3000 --pages=1
               sed -i 's/icc-color([^)]*)//g' p1_i.svg
               sed -i 's/#000000/#1d1d1bff/g' p1_i.svg
